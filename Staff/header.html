@@ -1,0 +1,66 @@
+
+<script type="text/javascript">
+function select(key, type)
+{
+	//type =1 is flight
+	//type =2 is schedule
+	// type=3 is costing
+	if(type=='1')
+	{
+		window.location = "flightinfoEdit.php?flightNo="+key;
+
+	}
+	else if(type =='2')
+	{
+		window.location = "scheduleInfoEdit.php?ScheduleID="+key;
+	}
+	
+	else if(type =='3')
+	{
+		window.location = "EditCostingStrucInfo.php?priceID="+key;
+	}
+	
+}
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Thistle airways</title>
+<meta http-equiv="Content-Type" content= "text/html; charset=utf-8" />
+
+<link rel="stylesheet" type="text/css" href="ta.css" />
+
+</head>
+
+<body>
+<div id="header">
+<h2> Thistle Airways booking and Management System portal</h2>
+		<form align=right> 
+			<input type="button" value="Logout" onClick="window.location = 'logout.php';"> 
+		</form>
+</div>
+
+<div id="topNav">
+	<table id="topNavTable">
+		<tr>
+		<td><a href="main.php"><p>Home</p></a></td>
+		<td><a href="flightinfo.php"><p>Add Flight</p></a></td>
+		<td><a href="FlightSelect.php"><p>Edit Flight</p></a></td>
+		<td><a href="scheduleInfo.php"><p>Add schedule</p></a></td>
+		<td><a href="editFlightSchedule.php"><p>Edit schedule</p></a></td>
+		<td><a href="AddCostingStruc.php"><p>Add costing structure</p></a></td>
+		<td><a href="EditCostingStruc.php"><p>Edit costing structure</p></a></td>
+		<td><a href="query.php"><p>Query</p></a></td>
+		<td><a href="users.php"><p>Users</p></a></td>
+		</tr>
+	</table>
+</div>
+
+<div id="content">
+<p>
+welcome, 
+<?php echo $_SESSION["name"]; ?><br></br>
+</p>
