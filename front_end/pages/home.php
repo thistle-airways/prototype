@@ -8,10 +8,12 @@
 			<tr class="to"><td>To</td><td>Drop Down</td></tr>
 			<tr class="depart"><td>Depart</td><td>Date</td></tr>
 			<tr class="return"><td>Return</td><td>Date</td></tr>
-			<tr class="space"></tr>
+			<tr class="space" />
 			<tr class="people"><td>Adults<br />Dropdown</td><td>Children<br />Dropdown</td></tr>
-			</table>
-</div>
+			<tr class="space" />
+			<tr class="actions"><td><a href="reset">Reset Form</a></td><td><a href="results">Search</a></td></tr>
+		</table>
+	</div>
 </div>
 <div class="content-body">
 Welcome to Thistle Airways. Please use our search on the left to look for flights, or lookup an existing booking.
