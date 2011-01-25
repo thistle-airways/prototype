@@ -32,10 +32,14 @@ if (!mysql_query($insert) || !mysql_query($updateTotals))
 		echo '<tr><td>departure time:</td><td>'.$schedule[3].'</td></tr>';
 		echo '<tr><td>arriavl time:</td><td>'.$schedule[4].'</td></tr>';
 		echo '</table>'; 
+		echo '
+		';
 	echo '</td><td>';
-	die('Error: ' . mysql_error());
+	echo('Error: ' . mysql_error());
 	echo'</td></tr>';
 	echo '</table>';
+	echo '<br/>';
+	
 	}   
   else{
 	  echo '<table border="1" id="sucessful">';
@@ -51,7 +55,8 @@ if (!mysql_query($insert) || !mysql_query($updateTotals))
 	echo'</td></tr>';
 	echo '</table>';
 	  
-  }
+  };
+  
  echo '<br/>';
 		echo date('l jS \of F Y h:i:s A');
 		echo '<br/>';

@@ -36,10 +36,11 @@ include("header.html");
 		<tr><td>No of Business seats: </td><td><input type="text" name="busSeats" /></td></tr>
 		<tr><td>No of Group seats:</td><td> <input type="text" name="groupSeats" /></td></tr>
 		<tr><td>Costing Structure: </td><td><input type="text" name="price" /><br/>
-		
 		<FORM> 
 			<INPUT type="button" value="View avalable structures" onClick="window.open('viewCostingStructures.php','costing structures','width=600,height=800')"> 
 		</FORM></td></tr>
+		
+		<tr><td>Temp Flight: </td><td><input type="checkbox" name="price" />weeks:<input value="grayed out untill <- clicked" type="text" name="dureation" /></td></tr>
 		<tr><th colspan="2"><input type="submit" /></th></tr>
 	</table>
 	

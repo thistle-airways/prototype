@@ -24,8 +24,8 @@ for ($i =0;  $i<mysql_num_rows($q_user); $i++)
 {
 $data = mysql_fetch_array($q_user);
 
-echo '<tr>';
-echo '<td>'.$data['username'].'</td>';
+echo '<tr >';
+echo '<td onClick="select(1,6);">'.$data['username'].'</td>';
 echo '<td>'.$data['password'].'</td>';
 echo '<td>'.$data['displayName'].'</td>';
 echo '<td>'.$data['accessLevel'].'</td>';
@@ -37,6 +37,6 @@ echo '</tr>';
 
 </table>
 
-<a href="page.htm"><img src="icons/add.gif" /></a>
+<a href="addUser.php"><img src="icons/add.gif" /></a>
 
 <?php include("footer.html"); ?>

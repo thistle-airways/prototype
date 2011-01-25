@@ -17,16 +17,21 @@ $result = mysql_query($query);
   $data = mysql_fetch_array($result);
 include("header.html");
 ?>
+<table id="displayInfo" border=1>
+<tr><th colspan=2>Customer Details</th></tr>
+<tr><td>customerID:</td> <td><?php echo $data['customerID'];?></td></tr>
+<tr><td>First Name: </td> <td><?php echo $data['Firstname'];?></td></tr>
+<tr><td>Last name: </td> <td><?php echo $data['LastName'];?></td></tr>
+<tr><td>Date Of Birth: </td> <td><?php echo $data['DOB'];?></td></tr>
+<tr><td>Sex: </td> <td><?php echo $data['Sex'];?></td></tr>
+<tr><td>EmailAddress: </td> <td><?php echo $data['EmailAddress'];?></td></tr>
+<tr><th colspan=2>
+	<form>
+		<input type="button" value="Edit" name="Edit_customer" onClick="window.location='custInfoEdit.php?custID=<?php echo $customerID;?>'"> 
+	</form>
+</th></tr>
 
-
-<p>customerID: <?php echo $data['customerID'];?></p>
-<p>First Name: <?php echo $data['Firstname'];?></p>
-<p>Last name: <?php echo $data['LastName'];?></p>
-<p>Date Of Birth: <?php echo $data['DOB'];?></p>
-<p>Sex: <?php echo $data['Sex'];?></p>
-<p>EmailAddress: <?php echo $data['EmailAddress'];?></p>
-
-
+</table>
 <br></br>
 
 

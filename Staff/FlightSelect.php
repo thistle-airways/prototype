@@ -56,31 +56,31 @@ echo '<td onClick="select('.$flightNo.',1);">';
 echo "<a href=\"flightinfoEdit.php?flightNo=".$flightNo."\">$flightNo</a>";
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['destination'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['departure'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['capacity'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['econemyseats'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['businessseats'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['groupseats'];
 echo '</td>';
 
-echo '<td onClick="select('.$flightNo.',1);"">';
+echo '<td onClick="select('.$flightNo.',1);">';
 echo $data['price'];
 echo '</td>';
 
