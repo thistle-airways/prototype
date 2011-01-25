@@ -1,4 +1,4 @@
-body, html {
+body, html , p{
   padding: 0px;
   margin: 0px;
   border: 0px none;
@@ -8,6 +8,10 @@ body {
 background-color:#FFF;
 }
 
+#header {
+border-bottom: 1px solid #333;
+padding-bottom:5px;
+}
 #page {
 	background: #f0f0f0 url(http://www2.macs.hw.ac.uk/~ms373/prototype/front_end/assets/images/texture.gif) repeat -70% 0;
 }
@@ -55,6 +59,7 @@ background-color:#FFF;
 	padding-top:10px;
 	padding-bottom:20px;
 	margin: 0px auto;
+	clear:both;
 }
 
 #footer-content {
@@ -66,4 +71,22 @@ background-color:#FFF;
 }
 .right-edge { border-right:1px solid #ccc; }
 .no-edge { border-right:0px; float:left; }
+
+#home {
+}
+
+.left-column {
+float: left;
+width: 300px;
+border-right:1px solid #ccc;
+padding-top:20px;
+}
+
+.content-body {
+float:left; 
+padding:20px 0px 0px 10px;
+}
+
+
+
 	

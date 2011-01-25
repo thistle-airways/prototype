@@ -6,14 +6,14 @@
         <div id="wrapper">
         
             <?php //Always include page title ?>
-            <div class="header">
+            <div id="header">
                 <?php include 'pages/header.php';?>
             </div>
             
             <?php //Determine page being requested, and include file from /pages/
             //
             //General Pages
-            if ($page == 'index') {?><div class="<?php echo $page; ?>"><?php include 'pages/home.php'; ?></div><?php }
+            if ($page == 'index') {?><div id="<?php echo $page; ?>"><?php include 'pages/home.php'; ?></div><?php }
             
             //Else show page not found error
             else {?>
