@@ -101,5 +101,10 @@ padding-bottom:5px;
 #search-table {
 	padding:5px;
 	}
+	
+#displayFlights {
+
+}
+#displayFlights tr:hover { background-color: #4a70aa; }
 
 	

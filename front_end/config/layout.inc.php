@@ -18,6 +18,7 @@
             elseif ($page == 'details') {?><div id="<?php echo $page; ?>"><?php include 'pages/details.php'; ?></div><?php }
             elseif ($page == 'confirmation') {?><div id="<?php echo $page; ?>"><?php include 'pages/confirmation.php'; ?></div><?php }
              elseif ($page == 'flights') {?><div id="<?php echo $page; ?>"><?php include 'pages/flights.php'; ?></div><?php }
+             elseif ($page == 'selectedFlight') {?><div id="<?php echo $page; ?>"><?php include 'pages/selectedFlight.php'; ?></div><?php }
             
             //Else show page not found error
             else {?>
