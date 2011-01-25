@@ -15,6 +15,8 @@
             //General Pages
             if ($page == 'index') {?><div id="<?php echo $page; ?>"><?php include 'pages/home.php'; ?></div><?php }
             
+            elseif ($page == 'details') {?><div id="<?php echo $page; ?>"><?php include 'pages/details.php'; ?></div><?php }
+            elseif ($page == 'confirmation') {?><div id="<?php echo $page; ?>"><?php include 'pages/confirmation.php'; ?></div><?php }
             //Else show page not found error
             else {?>
                 <div class="error">
