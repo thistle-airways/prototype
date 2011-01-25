@@ -8,6 +8,12 @@ body {
 background-color:#FFF;
 }
 
+h2{
+font-size:30px;
+font-family:fantasy;
+font-weight: normal;
+}
+
 #header {
 border-bottom: 1px solid #333;
 padding-bottom:5px;
@@ -103,8 +109,29 @@ padding-bottom:5px;
 	}
 	
 #displayFlights {
-
+	border-spacing: 0px;
+	border-collapse: collapse;
+	background-color:#E0E0E0 ;
 }
-#displayFlights tr:hover { background-color: #4a70aa; }
 
-	
+#displayFlights th{
+background: #B0B0B0;
+font-weight: normal;
+}
+
+#displayFlights tr:hover { background-color: #B0B0B0; }
+
+#flightData
+{
+	border-spacing: 0px;
+	border-collapse: collapse;
+	text-align:right;
+	background-color:#D8D8D8   ;
+}
+#flightData th
+{
+font-weight: normal;
+background: #B0B0B0;
+}
+
+

@@ -4,7 +4,7 @@ function select(key, type)
 
 	if(type=='1')
 	{
-		window.location = "flights/"+key;
+		window.location = "selectedFlight.html";
 
 	}
 	
