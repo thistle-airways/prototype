@@ -32,7 +32,7 @@ if (!mysql_query($insert))
 		echo '<tr><td>arriavl time:</td><td>'.$schedule[4].'</td></tr>';
 		echo '</table>'; 
 	echo '</td><td>';
-	die('Error: ' . mysql_error());
+	echo('Error: ' . mysql_error());
 	echo'</td></tr>';
 	echo '</table>';
 	}   

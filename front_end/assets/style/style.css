@@ -1,0 +1,92 @@
+body, html , p{
+  padding: 0px;
+  margin: 0px;
+  border: 0px none;
+  width: 100%;
+}
+body {
+background-color:#FFF;
+}
+
+#header {
+border-bottom: 1px solid #333;
+padding-bottom:5px;
+}
+#page {
+	background: #f0f0f0 url(http://www2.macs.hw.ac.uk/~ms373/prototype/front_end/assets/images/texture.gif) repeat -70% 0;
+}
+#page-inner{
+	background: url(http://www2.macs.hw.ac.uk/~ms373/prototype/front_end/assets/images/gradient.png) repeat-x -70% 0;
+	
+}
+
+#wrapper {
+	width: 980px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:0px;
+	border-top: 3px solid #333;
+	top:0;
+	background-color:#f8f8f8;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	
+}
+
+#top-bar {
+	
+	background:#f8f8f8;
+	width:100%;
+	float:left;
+	margin:0 0 24px 0;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+}
+
+#page-title {
+	margin-left:auto;
+	margin-right:auto;
+	text-align:left;
+	font-size:30px;
+	padding:15px 0px 15px 40px;
+	width:980px;
+}
+
+#footer {
+	font-size:10px;
+	text-align:left;
+	border-top:1px solid #ccc;
+	padding-top:10px;
+	padding-bottom:20px;
+	margin: 0px auto;
+	clear:both;
+}
+
+#footer-content {
+	padding-bottom:20px;
+}
+.footer-item {
+	padding: 0px 5px;
+	float:left;
+}
+.right-edge { border-right:1px solid #ccc; }
+.no-edge { border-right:0px; float:left; }
+
+#home {
+}
+
+.left-column {
+float: left;
+width: 300px;
+border-right:1px solid #ccc;
+padding-top:20px;
+}
+
+.content-body {
+float:left; 
+padding:20px 0px 0px 10px;
+}
+
+
+
+	

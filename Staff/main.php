@@ -9,15 +9,17 @@ include("header.html");
 		<tr>
 		<th>avalable actions</th>
 		</tr>
-		<tr>
-		<td>-generate report</td>
-		</tr>
-		<tr><td>-<a href="editFlightSchedule.php">Edit a flight schedule</a></td></tr>
-		<tr><td>-<a href="scheduleInfo.php">Add flight schedule</a></td></tr>
-		<tr><td>-<a href="FlightSelect.php">Edit a  flight</a></td></tr>
-		<tr><td>-<a href="flightinfo.php">Add flight</a></td></tr>
-		<tr><td>-<a href="AddCostingStruc.php">Add costing structure</a></td></tr>
-		<tr><td>-<a href="EditCostingStruc.php">Edit costing structure</a></td></tr>
+		
+		<tr><td>-<a href="report.php">Generate Report</a></td></tr>
+		<tr><td>-<a href="editFlightSchedule.php">Edit a Flight Schedule</a></td></tr>
+		<tr><td>-<a href="scheduleInfo.php">Add Flight Schedule</a></td></tr>
+		<tr><td>-<a href="FlightSelect.php">Edit A  Flight</a></td></tr>
+		<tr><td>-<a href="flightinfo.php">Add Flight</a></td></tr>
+		<tr><td>-<a href="AddCostingStruc.php">Add Costing Structure</a></td></tr>
+		<tr><td>-<a href="EditCostingStruc.php">Edit Costing Structure</a></td></tr>
+		<tr><td>-<a href="expendatures.php">Company Expenditures</a></td></tr>
+		<tr><td>-<a href="airports.php">Maintain Airports</a></td></tr>
+		<tr><td>-<a href="travleAgents.php">Maintain Travel Agents</a></td></tr>
 
 
 		</table>
