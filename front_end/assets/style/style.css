@@ -95,7 +95,11 @@ padding-bottom:5px;
 .search-heading {
 	font-weight:bold;
 	background-color:#E6E6E6;
-	padding:5px 0px;
+	padding:5px 5px;
 }
+
+#search-table {
+	padding:5px;
+	}
 
 	
