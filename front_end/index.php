@@ -8,26 +8,13 @@ $page = (isset($_GET['page']))? $_GET['page'] : 'index';
 ?>
 <head>
     <?php 
+	include 'config/definitions.inc.php';
 	include 'config/settings.inc.php'; 
 	include 'config/functions.inc.php';
 	?>
 </head>
 
-<body>
 <?php
-//Always include page title
-include 'pages/header.php';
-		
-//Determine page being requested, and include file from /pages/
-//
-//General Pages
-if ($page == 'index') {include 'pages/home.php'; }
-
-//Else show page not found error
-else {include 'pages/error.php'; }
-
-//Always include footer
-include 'pages/footer.php'; 
+	include 'config/layout.inc.php';
 ?>
-</body>
 </html>
