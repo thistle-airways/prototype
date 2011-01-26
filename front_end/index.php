@@ -11,9 +11,6 @@ $page = (isset($_GET['page']))? $_GET['page'] : 'index';
 	include 'config/settings.inc.php'; 
 	include 'config/functions.inc.php';
 	?>
-    <script type="text/javascript">
-window.onload = fltsInit;
-</script>
 </head>
 
 <?php 
