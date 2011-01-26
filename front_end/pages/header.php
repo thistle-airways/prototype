@@ -1,7 +1,7 @@
 <div id="menu-left">
 <?php
 function build_breadcrumbs($page) {
-	$breadcrumbs = array(array('index', 'Home'), array('flights', 'Select Flights'), array('details', 'Enter Details'), array('confirm', 'Confirm Booking'));
+	$breadcrumbs = array(array('index', 'Home'), array('flights', 'Select Flights'), array('details', 'Enter Details'), array('confirmation', 'Confirm Booking'));
 	$header = '';
 	$pageMatched = FALSE;
 	for ($i = 0; $i < count($breadcrumbs); $i++) {

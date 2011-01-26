@@ -1,19 +1,33 @@
 <div class="left-column">
-	<div id="flight-search">
-		<p class="search-heading"></p>
-		<table id="search-table">
-		</table>
-	</div>
+ <div id="display-selected">
+		<div id="display-selected-out">
+        <table><tr class="out"><td>£55<br /><!--<input type="radio" name="select" value="203@100211" />--><td>1710 &nbsp; &nbsp; Thu 10 Feb</td><td>1820 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td class="fltNo">207</td></tr></table>
+        </div>
+        
+        <div id="display-selected-in">
+        <table><tr class="in"><td>£29<br /><!--<input type="radio" name="select" value="203@100211" />--><td>0930 &nbsp; &nbsp; Tue 15 Feb</td><td>1040 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td class="fltNo">202</td></tr></table>
+        </div>
+        
+        Total: £84
+    </div>
+    <div id="display-details" style="padding-top:20px">
+    Passenger 1: Tim Jones<br />
+    Passenger 2: Ruth Smith<br />
+    &nbsp;<br />
+    Billing Details<br />
+    Tim Jones<br />
+    18 Meadow Ave<br />
+    Edinburgh<br />
+    EH4 8MX<br />
+    &nbsp;<br />
+    <i>Email: tim.jones@gmail.com</i><br />
+    </div>
 </div>
 <div class="content-body">
 <p class="search-heading">Confirmation of booking</p>
-<p></p>
 		Thank you for your booking.<br/>
-		You have booked for the flight THS0789 to London Gatewick from Edinburgh.<br/>
-		Your depart is the 11/01/2011 at 9.15 am.<br/>
-		Your retrun is the 20/01/2011 at 4.15 pm.<br/>
-		Your information : Paul John <br/>
-		ID number : BR01520FR25JOH511<br/>
-		Credit Card information : **** **** **** **** 5648
+        
+        Your comfirmation code is HHOEMZ</br>
+        You have been emailed full details of your booking.
 </p>		
 </div>

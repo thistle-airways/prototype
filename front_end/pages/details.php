@@ -1,24 +1,51 @@
 <div class="left-column">
-	<div id="flight-search">
-		<p class="search-heading">Your Flight</p>
-		<table id="search-table">
-			<tr class="from"><td>From</td><td>Edinburg</td></tr>
-			<tr class="to"><td>To</td><td>London Gatwick</td></tr>
-			<tr class="depart"><td>Depart</td><td>11/01/2011</td></tr>
-			<tr class="return"><td>Return</td><td>20/01/2011</td></tr>
-			<tr class="space"></tr>
-			<tr class="numberFlight"><td>Flight number</td><td>THS0789</td></tr>
-		</table>
-	</div>
+ <div id="display-selected">
+		<div id="display-selected-out">
+        <table><tr class="out"><td>£55<br /><!--<input type="radio" name="select" value="203@100211" />--><td>1710 &nbsp; &nbsp; Thu 10 Feb</td><td>1820 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td class="fltNo">207</td></tr></table>
+        </div>
+        
+        <div id="display-selected-in">
+        <table><tr class="in"><td>£29<br /><!--<input type="radio" name="select" value="203@100211" />--><td>0930 &nbsp; &nbsp; Tue 15 Feb</td><td>1040 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td class="fltNo">202</td></tr></table>
+        </div>
+        
+        Total: £84
+    </div>
 </div>
-<div class="content-body">
-<p class="search-heading">Details</p>
-		<table id="search-table">
-			<tr class="name"><td>Name :<input type="text" name="name" /></td></tr>
-			<tr class="surname"><td>Surname :<input type="text" name="surname" /></td></tr>
-			<tr class="idNumber"><td>Id / Passport number :<input type="text" name="idNumber" /></td></tr>
-			<tr class="creditCard"><td>Credit Card :<input type="text" name="creditCard" /></td></tr>
-		</table>
-		<input type="submit" name="submit" value="Submit" />
+
+<div id="content-body">
+	<p>Details</p>
+    	<form action="confirmation.html" method="post">
+		<table id="details">
+			<tr><td>Passenger 1</td></tr>
+            <tr class="firstN-1"><td>First Name</td><td><input type="text" name="firstN-1" /></td></tr>
+			<tr class="lastN-1"><td>Surname</td><td><input type="text" name="lastN-1" /></td></tr>
+			<tr class="pNo-1"><td>Passport number</td><td><input type="text" name="pNo-1" /></td></tr>
+            <tr><td>Passenger 2</td></tr>
+            <tr class="firstN-2"><td>First Name</td><td><input type="text" name="firstN-2" /></td></tr>
+			<tr class="lastN-2"><td>Surname</td><td><input type="text" name="lastN-2" /></td></tr>
+			<tr class="pNo-2"><td>Passport number</td><td><input type="text" name="pNo-2" /></td></tr>
+		
+        	<tr><td>&nbsp;</td></tr>
+        
+			<tr><td>Billing Details</td></tr>
+            <tr class="firstN-b"><td>First Name</td><td><input type="text" name="firstN-b" /></td></tr>
+			<tr class="lastN-b"><td>Surname</td><td><input type="text" name="lastN-b" /></td></tr>
+            <tr class="email"><td>Email Address</td><td><input type="text" name="email" /></td></tr>
+        	<tr class="address-1"><td>1st Line Address</td><td><input type="text" name="address-1" /></td></tr>
+        	<tr class="address-2"><td>2nd Line Address</td><td><input type="text" name="address-2" /></td></tr>
+            <tr class="city"><td>City</td><td><input type="text" name="city" /></td></tr>
+            <tr class="pcode"><td>Postcode</td><td><input type="text" name="pcode" /></td></tr>
+            
+            <tr><td>&nbsp;</td></tr>
+            
+			<tr><td>Card Details</td></tr>
+            <tr class="firstN-b"><td>Type</td><td><?php dropdown(array('', 'Visa', 'Mastercard', 'AMEX', 'Switch/Solo')); ?></td></tr>
+			<tr class="cc-no"><td>Card Number</td><td><input type="text" name="cc-no" /></td></tr>
+        	<tr class="exp"><td>Expiry Date</td><td><input type="text" name="exp" /></td></tr>
+        	<tr class="sec-code"><td>Security Code</td><td><input type="text" name="sec-code" /></td></tr>
+			<tr><td>&nbsp;</td></tr>
+			<tr><td><input type="submit" name="submit" value="Make Booking" /></td></tr>
+            </table>
+		</form>
 </div>
 
