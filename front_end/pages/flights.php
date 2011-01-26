@@ -38,8 +38,8 @@
         
         <table id="displayFlights" class="outbound">
         <tr class="row-title"><td>Price</td><td>Depart</td><td>Arrive</td><td>From</td><td>To</td><td>Flight No</td></tr>
-        <tr id="<?php echo $flightsID; ?>" onmousedown="highlightSelect(<?php echo $flightsID; $flightsID++; ?>);"><td>£40<br /><!--<input type="radio" name="select" value="203@100211" />--><td>11:35 &nbsp; &nbsp; Thu 10 Feb</td><td>12:45 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>203</td></tr>
-<tr id="<?php echo $flightsID; ?>" onmousedown="highlightSelect(<?php echo $flightsID; $flightsID++; ?>);"><td>£55<br /><!--<input type="radio" name="select" value="203@100211" />--><td>17:10 &nbsp; &nbsp; Thu 10 Feb</td><td>18:20 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>207</td></tr>
+        <tr id="<?php echo $flightsID; ?>" class="out" onmousedown="highlightSelect(0, <?php echo $flightsID; $flightsID++; ?>);"><td>£40<br /><!--<input type="radio" name="select" value="203@100211" />--><td>11:35 &nbsp; &nbsp; Thu 10 Feb</td><td>12:45 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>203</td></tr>
+<tr id="<?php echo $flightsID; ?>" class="out" onmousedown="highlightSelect(0, <?php echo $flightsID; $flightsID++; ?>);"><td>£55<br /><!--<input type="radio" name="select" value="203@100211" />--><td>17:10 &nbsp; &nbsp; Thu 10 Feb</td><td>18:20 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>207</td></tr>
         </table>
     </div>
 </div>
@@ -54,8 +54,8 @@
         
         <table id="displayFlights" class="inbound">
         <tr class="row-title"><td>Price</td><td>Depart</td><td>Arrive</td><td>From</td><td>To</td><td>Flight No</td></tr>
-        <tr id="<?php echo $flightsID; ?>" onmousedown="highlightSelect(<?php echo $flightsID; $flightsID++; ?>);"><td>£29<br /><!--<input type="radio" name="select" value="203@100211" />--><td>09:30 &nbsp; &nbsp; Tue 15 Feb</td><td>10:40 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td>202</td></tr>
-<tr id="<?php echo $flightsID; ?>" onmousedown="highlightSelect(<?php echo $flightsID; $flightsID++; ?>);"><td>£35<br /><!--<input type="radio" name="select" value="203@100211" />--><td>13:00 &nbsp; &nbsp; Tue 15 Feb</td><td>14:10 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td>205</td></tr>
+        <tr id="<?php echo $flightsID; ?>" class="in" onmousedown="highlightSelect(1, <?php echo $flightsID; $flightsID++; ?>);"><td>£29<br /><!--<input type="radio" name="select" value="203@100211" />--><td>09:30 &nbsp; &nbsp; Tue 15 Feb</td><td>10:40 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td>202</td></tr>
+<tr id="<?php echo $flightsID; ?>" class="in" onmousedown="highlightSelect(1, <?php echo $flightsID; $flightsID++; ?>);"><td>£35<br /><!--<input type="radio" name="select" value="203@100211" />--><td>13:00 &nbsp; &nbsp; Tue 15 Feb</td><td>14:10 &nbsp; &nbsp; Tue 15 Feb</td><td>Inverness</td><td>Edinburgh</td><td>205</td></tr>
         </table>
     </div>
 </div>

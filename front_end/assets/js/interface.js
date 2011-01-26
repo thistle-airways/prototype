@@ -16,12 +16,20 @@ function select(key, type)
 
 }
 
-function highlightSelect(id) {
+function highlightSelect(inbOutb, id) {
 	//var thisFlight = evt.target;
 	var thisFlight = document.getElementById(id);
-	if (thisFlight.className == "") {
-		thisFlight.className = "pickedFlt";
+	var inOut = "";
+	if (inbOutb == 0) { inOut = "out"; }
+	if (inbOutb == 1) { inOut = "in"; }
+	
+	if (thisFlight.className == inOut) {
+		var rows = document.getElementsByClassName(inOut);
+		for (var i=0; i < rows.length; i++) {
+			rows[i].className = inOut;
+		}
+		thisFlight.className = inOut + " pickedFlt";
 	} else {
-		thisFlight.className = "";
+		thisFlight.className = inOut;
 	}
 }
