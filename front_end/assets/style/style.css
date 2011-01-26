@@ -4,6 +4,12 @@ body, html , p{
   border: 0px none;
   width: 100%;
 }
+
+a{color:#444;display:inline;text-decoration:none; border:1px solid #333; padding:3px;}
+
+a:hover {color:#000; text-decoration:underline;}
+
+
 body {
 background-color:#FFF;
 }
@@ -49,6 +55,12 @@ padding-bottom:5px;
 	border-bottom:1px solid #ccc;
 }
 
+#menu-left {
+	padding:5px 20px;
+}
+a.menu{color:#444;display:inline;text-decoration:none;border:0px;}
+a.menu:hover {color:#000; text-decoration:underline;}
+
 #page-title {
 	margin-left:auto;
 	margin-right:auto;
@@ -87,6 +99,7 @@ padding-bottom:5px;
 	border-right:1px solid #ccc;
 	padding-top:20px;
 	margin-right:10px;
+	height:800px;
 }
 
 .content-body {
@@ -149,10 +162,23 @@ background: #B0B0B0;
 .page-title {
 	font-weight:bold;
 	font-size:35;
+	padding:10px 0px;
 }
 
 div.results-box {
 	float:left;
 	border:1px solid #ccc;
 	border-spacing:3px;
+	padding:2px;
+	margin-bottom:10px;
+}
+
+p.flights.title {
+	font-weight:bold;
+	font-size:20;
+	text-transform:uppercase;
+}
+p.flights.subtitle {
+	font-style:italic;
+	color:#333;
 }
