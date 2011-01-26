@@ -6,8 +6,8 @@
 		<table id="search-table">
 			<tr class="from"><td>From</td><td><?php dropdown($destinations, 'Edinburgh'); ?></td></tr>
 			<tr class="to"><td>To</td><td><?php dropdown($destinations, 'Inverness'); ?></td></tr>
-			<tr class="depart"><td>Depart</td><td>Date</td></tr>
-			<tr class="return"><td>Return</td><td>Date</td></tr>
+			<tr class="depart"><td>Depart</td><td><?php datePicker(10, 2); ?></td></tr>
+			<tr class="return"><td>Return</td><td><?php datePicker(15, 2); ?></td></tr>
 			<tr class="space" />
 			<tr class="people"><td>Adults<br />Dropdown</td><td>Children<br />Dropdown</td></tr>
 			<tr class="space" />

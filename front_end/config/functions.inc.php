@@ -9,4 +9,29 @@ function dropdown($entries, $default) {
 	echo '</select>';
 }
 
-
+function datePicker($defDay = FALSE, $defMonth = FALSE) {
+	if (!$defDay) { $defDay = date("d") + 1; }
+	if (!$defMonth) { $defMonth = date("m"); }
+	echo '<div class="date-select">';
+	//Day
+	echo '<select class="day">';
+	for ($i = 1; $i < 31; $i++) {
+		if ($i == $defDay) { ?><option selected><?php } else { ?><option><?php }
+		echo $i.'</option>';
+	}
+	echo '<select>';
+	
+	echo '<select class="month">';
+	for ($i = 1; $i < 12; $i++) {
+		if ($i == $defMonth) { ?><option selected><?php } else { ?><option><?php }
+		echo $i.'</option>';
+	}
+	echo '<select>';
+	
+	echo '<select class="year">';
+	for ($i = 2011; $i < 2012; $i++) {
+		echo '<option>'.$i.'</option>';
+	}
+	echo '<select>
+	</div>';
+}
