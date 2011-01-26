@@ -131,7 +131,7 @@ a.menu:hover {color:#000; text-decoration:underline;}
 	width:620px;
 }
 
-#displayFlights tr:hover { background-color: #B0B0B0; }
+#displayFlights tr:hover { background-color:#27ACD6; }
 
 #displayFlights .row-title
 {
@@ -184,3 +184,7 @@ p.flights.subtitle {
 }
 #search-table .spacer.small td { padding-top: 5px; }
 #search-table .spacer td { padding-top: 30px; }
+
+.pickedFlt {
+	background-color:#C8E8F2;
+}
