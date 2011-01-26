@@ -86,11 +86,14 @@ padding-bottom:5px;
 	width: 300px;
 	border-right:1px solid #ccc;
 	padding-top:20px;
+	margin-right:10px;
 }
 
 .content-body {
 	float:left; 
-	padding:20px 0px 0px 10px;
+	padding-top:20px;
+	word-wrap:normal;
+	width:660px;
 }
 
 #flight-search {
@@ -106,20 +109,34 @@ padding-bottom:5px;
 
 #search-table {
 	padding:5px;
-	}
-	
+}
+
 #displayFlights {
 	border-spacing: 0px;
 	border-collapse: collapse;
-	background-color:#E0E0E0 ;
-}
-
-#displayFlights th{
-background: #B0B0B0;
-font-weight: normal;
+	background-color:#E0E0E0;
+	width:620px;
 }
 
 #displayFlights tr:hover { background-color: #B0B0B0; }
+
+#displayFlights .row-title
+{
+font-weight: normal;
+background: #B0B0B0;
+}
+
+
+
+#outbound {
+}
+
+#outbound .flights {
+}
+
+#outbound .flights.title {
+	font-weight: bold;
+}
 
 #flightData
 {
@@ -128,10 +145,14 @@ font-weight: normal;
 	text-align:right;
 	background-color:#D8D8D8   ;
 }
-#flightData th
-{
-font-weight: normal;
-background: #B0B0B0;
+
+.page-title {
+	font-weight:bold;
+	font-size:35;
 }
 
-
+div.results-box {
+	float:left;
+	border:1px solid #ccc;
+	border-spacing:3px;
+}

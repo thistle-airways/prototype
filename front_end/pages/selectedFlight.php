@@ -1,4 +1,3 @@
-
 <h2>flight: 203</h2>
 
 <table id="flightData" border=1>

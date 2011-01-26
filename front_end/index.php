@@ -1,14 +1,10 @@
 <script type="text/javascript">
 function select(key, type)
 {
-
-	if(type=='1')
+	if(type == '1')
 	{
-		window.location = "selectedFlight.html";
-
+		window.location = "flight-details.html";
 	}
-	
-	
 }
 </script>
 
@@ -18,8 +14,6 @@ function select(key, type)
 <?php
 //Determine page requested as parsed by .htaccess (if directory root, $page = 'index')	
 $page = (isset($_GET['page']))? $_GET['page'] : 'index'; 
-$flightNo = (isset($_GET['flightNo']))? $_GET['flightNo'] : 'error';
-
 ?>
 <head>
     <?php 
@@ -29,7 +23,7 @@ $flightNo = (isset($_GET['flightNo']))? $_GET['flightNo'] : 'error';
 	?>
 </head>
 
-<?php
+<?php 
 	include 'config/layout.inc.php';
 ?>
 </html>

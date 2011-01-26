@@ -1,21 +1,35 @@
+<div class="left-column">
+	<div id="flight-search">
+		<p class="search-heading">Book a flight</p>
+		
+		<!--Search fields populated from available destinations in DB -->
+		<table id="search-table">
+			<tr class="from"><td>From</td><td><?php dropdown($destinations, 'Edinburgh'); ?></td></tr>
+			<tr class="to"><td>To</td><td><?php dropdown($destinations, 'Inverness'); ?></td></tr>
+			<tr class="depart"><td>Depart</td><td>Date</td></tr>
+			<tr class="return"><td>Return</td><td>Date</td></tr>
+			<tr class="space" />
+			<tr class="people"><td>Adults<br />Dropdown</td><td>Children<br />Dropdown</td></tr>
+			<tr class="space" />
+			<tr class="actions"><td><a href="reset">Reset Form</a></td><td><a href="flights.html">Search</a></td></tr>
+		</table>
+	</div>
+</div>
 
-<div id="fsearch"><h2>flights matching your criteria </h4></div>
 
-
-<table id="displayFlights" border=1>
-<tr><th>flight No</th><th>departure date</th><th>depart form</th><th>destination</th></tr>
-<tr><td onClick="select(1,1);">202</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>203</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>204</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>205</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>206</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>207</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>208</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>209</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>201</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>211</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>212</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-<tr><td>213</td><td>2011-02-13</td><td>Edi</td><td>Lut</td></tr>
-
-
-</table>
+<p class="page-title">Select your flights</p>
+<div class="results-box outbound">
+    <div class="heading">
+        <p class = "flights title">Outbound</p>
+        <p class = "flights subtitle">Edinburgh - Inverness</p>
+    </div>
+    <div class="results">
+    	
+        
+        <table id="displayFlights" class="outbound">
+        <tr class="row-title"><td>Price</td><td>Depart</td><td>Arrive</td><td>From</td><td>To</td><td>Flight No</td></tr>
+        <tr onClick="select(1,1);"><td>£40<br /><!--<input type="radio" name="select" value="203@100211" />--><td>11:35 &nbsp; &nbsp; Thu 10 Feb</td><td>12:45 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>203</td></tr>
+<tr onClick="select(1,1);"><td>£55<br /><!--<input type="radio" name="select" value="203@100211" />--><td>17:10 &nbsp; &nbsp; Thu 10 Feb</td><td>18:20 &nbsp; &nbsp; Thu 10 Feb</td><td>Edinburgh</td><td>Inverness</td><td>203</td></tr>
+        </table>
+    </div>
+</div>

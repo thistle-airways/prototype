@@ -2,9 +2,9 @@
 	<div id="page-inner">
         <div id="top-bar">
            <div id="page-title">Thistle Airways</div>
+           
         </div>
         <div id="wrapper">
-        
             <?php //Always include page title ?>
             <div id="header">
                 <?php include 'pages/header.php';?>
@@ -18,7 +18,7 @@
             elseif ($page == 'details') {?><div id="<?php echo $page; ?>"><?php include 'pages/details.php'; ?></div><?php }
             elseif ($page == 'confirmation') {?><div id="<?php echo $page; ?>"><?php include 'pages/confirmation.php'; ?></div><?php }
             elseif ($page == 'flights') {?><div id="<?php echo $page; ?>"><?php include 'pages/flights.php'; ?></div><?php }
-            elseif ($page == 'selectedFlight') {?><div id="<?php echo $page; ?>"><?php include 'pages/selectedFlight.php'; ?></div><?php }
+            elseif ($page == 'flight-details') {?><div id="<?php echo $page; ?>"><?php include 'pages/selectedFlight.php'; ?></div><?php }
             elseif ($page == 'bookingInfo') {?><div id="<?php echo $page; ?>"><?php include 'pages/bookingInfo.php'; ?></div><?php }
             
             //Else show page not found error
