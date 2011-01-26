@@ -14,7 +14,7 @@ print $_GET['cause'];
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Thistle airways</title>
+<title>Thistle Airways</title>
 <meta http-equiv="Content-Type" content= "text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" href="ta.css" />
@@ -23,7 +23,7 @@ print $_GET['cause'];
 
 <body>
 <div id="header">
-<h2> Thistle Airways booking and Management System portal</h2>
+<h2> Thistle Airways booking and Management System Portal</h2>
 </div>
 
 

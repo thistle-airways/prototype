@@ -28,7 +28,7 @@ include("header.html");
 <form name="Flight_info" method="post" action="processFlight.php?action=PFlight">
 	<table border="1" id="inputData">
 		<tr ><th colspan="2"><h4>Enter Flight Information</h4></th></tr>
-		<tr><td>flight Number:</td><td> <input type="text" name="FNo"/></td></tr>
+		<tr><td>Flight Number:</td><td> <input type="text" name="FNo"/></td></tr>
 		<tr><td>Flight Destination: </td><td><input type="text" name="dest" /></td></tr>
 		<tr><td>Flight Departure: </td><td><input type="text" name="depart" /></td></tr>
 		<tr><td>Flight Capacity: </td><td><input type="text" name="cap"  /></td></tr>

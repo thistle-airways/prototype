@@ -17,9 +17,9 @@ $q_user = mysql_query("SELECT * FROM prices");
 	<form name="Flight_info" method="post" action="" align=right>
 						<table border="0" id="ResultRefine">
 								
-								<tr><th colspan="2">Refine structures</th></tr>
-								<tr><td>priceID:</td> <td><input type="text" name="Dest" ></input></td></tr>
-								<tr><td>PriceName:</td> <td><input type="text" name="Dep" ></input></td></tr>
+								<tr><th colspan="2">Refine Structures</th></tr>
+								<tr><td>Price ID:</td> <td><input type="text" name="Dest" ></input></td></tr>
+								<tr><td>Price Name:</td> <td><input type="text" name="Dep" ></input></td></tr>
 	
 							<tr>
 								<td colspan="2"><input type="submit" value="Search" /></td>
@@ -33,12 +33,12 @@ $q_user = mysql_query("SELECT * FROM prices");
 <div id="disInfo">
 <table border="1" align=left id="displayInfo">
 <tr>
-<th><h4>priceID</h4></th>
-<th><h4>priceName</h4></th>
-<th><h4>businessclass</h4></th>
-<th><h4>economyclass</h4></th>
-<th><h4>groupclass</h4></th>
-<th><h4>Apply discount</h4></th>
+<th><h4>Price ID</h4></th>
+<th><h4>price Name</h4></th>
+<th><h4>Business Class</h4></th>
+<th><h4>Economy Class</h4></th>
+<th><h4>Group Class</h4></th>
+<th><h4>Apply Discount</h4></th>
 <th><h4>Delete</h4></th>
 </tr>
 

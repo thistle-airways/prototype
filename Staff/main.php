@@ -5,9 +5,9 @@ include("header.html");
 
 
 	<div id="nav">
-		<table id ="navtable"border="1" align=left>
+		<table id ="navtable"border="1">
 		<tr>
-		<th>avalable actions</th>
+		<th>Available Actions</th>
 		</tr>
 		
 		<tr><td>-<a href="report.php">Generate Report</a></td></tr>
@@ -23,26 +23,16 @@ include("header.html");
 
 
 		</table>
-
-		<p align=right> Select an action from the actions list
-						bellow is where search cirteria 
-						can be entered when searching 
-						for customers, booking , 
-						flights and there schedules</p>
-	</div>
-	<br/><br/>
-	<div id="searches">
+</div>
+<div id="searches">
 		<table border="2" id="searchtable">
-			
-			<th colspan="2">search a flight </th>
+			<th colspan="2">Search Flights</th>
 			<tr>
 				<td>
-					
-
 					<form name="Flight_info" method="get" action="ViewFlight.php?action=Fsearch" align=right>
 						<table border="0" id="searchsub">
 							<tr>
-								<td>FlightNo:</td>
+								<td>Flight No:</td>
 								<td><input type="text" name="FNo" ></input></td>
 							</tr>
 							<tr>
@@ -63,9 +53,9 @@ include("header.html");
 								<tr><td>Departure:</td> <td><input type="text" name="Dep" ></input></td></tr>
 								<tr><td>Departure Date:</td> <td><input type="text" name="DepDat" ></input></td></tr>
 								<tr><td>Departure Time:</td> <td><input type="text" name="DepTim" ></input></td></tr>
-								<tr><td>Avalable Econemy:</td> <td><input type="text" name="" ></input></td></tr>
-								<tr><td>Avalable Business:</td> <td><input type="text" name="" ></input></td></tr>
-								<tr><td>Avalable Group:</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Available Economy:</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Available Business:</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Available Group:</td> <td><input type="text" name="" ></input></td></tr>
 	
 							<tr>
 								<td><input type="submit" value="Search" /></td>
@@ -82,7 +72,7 @@ include("header.html");
 
 					<form name="customer_info" method="get" action="viewCustomer.php?action=Csearch" align=right>
 						<table border="0" id="searchsub">
-							<tr><td>customerID:</td><td> <input type="text" name="custID" ></input></td></tr>
+							<tr><td>Customer ID:</td><td> <input type="text" name="custID" ></input></td></tr>
 							<tr><td><input type="submit" value="Search" /></td></tr>
 						</table>
 					</form>
@@ -93,8 +83,8 @@ include("header.html");
 				
 					<form name="customer_info" method="post" action="CustomerSearch.php?action=Csearch" align=right>
 						<table border="0" id="searchsub">
-							<tr><td>Firstname:</td><td> <input type="text" name="Fname" ></input></td></tr>
-							<tr><td>LastName: </td><td><input type="text" name="Lname" ></input></td></tr>
+							<tr><td>First Name:</td><td> <input type="text" name="Fname" ></input></td></tr>
+							<tr><td>Last Name: </td><td><input type="text" name="Lname" ></input></td></tr>
 							
 							<tr><td><input type="submit" value="Search" /></td><td>
 						</table>

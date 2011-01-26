@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include ("connect.php");
 session_name("MyLogin");
 session_start();

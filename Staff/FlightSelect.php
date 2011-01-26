@@ -35,13 +35,13 @@ $q_user = mysql_query("SELECT * FROM flight");
 
 <table border="1" align=left id="displayInfo">
 <tr class="d0">
-<th><h4>FlightNo</h4></th>
+<th><h4>Flight No</h4></th>
 <th><h4>Destination</h4></th>
 <th><h4>Departure</h4></th>
 <th><h4>Capacity</h4></th>
-<th><h4>Econemy seats</h4></th>
-<th><h4>Business seats</h4></th>
-<th><h4>Group seats</h4></th>
+<th><h4>Economy Seats</h4></th>
+<th><h4>Business Seats</h4></th>
+<th><h4>Group Seats</h4></th>
 <th><h4>Costing Structure</h4></th>
 <th><h4>Delete</h4></th>
 </tr>

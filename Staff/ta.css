@@ -78,8 +78,13 @@ width:100%;
 }
 
 #nav{
- float:top;
+ float:left;
  height: 250px;
+ width:15%;
+}
+#searches {
+	float:left;
+	width: 85%;
 }
 #navtable{
 	border-collapse:collapse;
