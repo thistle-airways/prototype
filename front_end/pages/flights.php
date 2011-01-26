@@ -9,7 +9,7 @@
 			<tr class="depart"><td>Depart</td><td><?php datePicker(10, 2); ?></td></tr>
 			<tr class="return"><td>Return</td><td><?php datePicker(15, 2); ?></td></tr>
 			<tr class="space" />
-			<tr class="people"><td>Adults<br />Dropdown</td><td>Children<br />Dropdown</td></tr>
+			<tr class="people"><td>Adults<br /><?php noPsngrPicker("adult", 2); ?></td><td>Children<br /><?php noPsngrPicker("adult"); ?></td></tr>
 			<tr class="space" />
 			<tr class="actions"><td><a href="reset">Reset Form</a></td><td><a href="flights.html">Search</a></td></tr>
 		</table>

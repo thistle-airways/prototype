@@ -35,3 +35,20 @@ function datePicker($defDay = FALSE, $defMonth = FALSE) {
 	echo '<select>
 	</div>';
 }
+
+function noPsngrPicker($psngrType, $defNo = 0) {
+	?><div class="no-passengers">
+    <select class="psngr-select <?php echo $psngrType; ?>">
+    <?php
+	for ($i = 0; $i < 10; $i++) {
+		if ($i == $defNo) { ?><option selected><?php } else { ?><option><?php }
+		echo $i; ?></option>
+        <?php
+	} ?>
+    </select>
+    </div>
+    <?php
+}
+
+
+?>
