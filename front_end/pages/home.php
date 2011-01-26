@@ -8,9 +8,9 @@
 			<tr class="to"><td>To</td><td><?php dropdown($destinations, ''); ?></td></tr>
 			<tr class="depart"><td>Depart</td><td><?php datePicker(); ?></td></tr>
 			<tr class="return"><td>Return</td><td><?php datePicker(); ?></td></tr>
-			<tr class="space" />
+			<tr class="spacer small"><td></td></tr>
 			<tr class="people"><td>Adults<br /><?php noPsngrPicker("adult"); ?></td><td>Children<br /><?php noPsngrPicker("children"); ?></td></tr>
-			<tr class="space" />
+			<tr class="spacer"><td></td></tr>
 			<tr class="actions"><td><a href="reset">Reset Form</a></td><td><a href="flights.html">Search</a></td></tr>
 		</table>
 	</div>

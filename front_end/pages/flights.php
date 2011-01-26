@@ -2,16 +2,16 @@
 	<div id="flight-search">
 		<p class="search-heading">Book a flight</p>
 		
-		<!--Search fields populated from available destinations in DB -->
+		<!--Search fields to be populated from available destinations in DB -->
 		<table id="search-table">
 			<tr class="from"><td>From</td><td><?php dropdown($destinations, 'Edinburgh'); ?></td></tr>
 			<tr class="to"><td>To</td><td><?php dropdown($destinations, 'Inverness'); ?></td></tr>
 			<tr class="depart"><td>Depart</td><td><?php datePicker(10, 2); ?></td></tr>
 			<tr class="return"><td>Return</td><td><?php datePicker(15, 2); ?></td></tr>
-			<tr class="space" />
+			<tr class="spacer small"><td></td></tr>
 			<tr class="people"><td>Adults<br /><?php noPsngrPicker("adult", 2); ?></td><td>Children<br /><?php noPsngrPicker("adult"); ?></td></tr>
-			<tr class="space" />
-			<tr class="actions"><td><a href="reset">Reset Form</a></td><td><a href="flights.html">Search</a></td></tr>
+			<tr class="spacer"><td></td></tr>
+			<td><a href="reset">Reset Form</a></td><td><a href="flights.html">Search</a></td></tr>
 		</table>
 	</div>
 </div>
