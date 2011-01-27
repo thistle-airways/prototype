@@ -23,7 +23,7 @@ print $_GET['cause'];
 
 <body>
 <div id="header">
-<h2> Thistle Airways booking and Management System Portal</h2>
+<h2> Thistle Airways Booking and Management System Portal</h2>
 </div>
 
 

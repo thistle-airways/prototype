@@ -47,9 +47,9 @@ for (var i=0; i < document.getStruc.ID.length; i++)
 <th>Select</th>
 <th>PriceID</th>
 <th>Structure Name</th>
-<th>Econemy price</th>
-<th>Business price</th>
-<th>Group price</th>
+<th>Economy Price</th>
+<th>Business Price</th>
+<th>Group Price</th>
 </tr>
 <?php
 	for($i=0; $i<mysql_num_rows($q_user); $i++)

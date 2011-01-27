@@ -31,9 +31,9 @@ include("header.html");
 
 <table border="1" align=left id="displayInfo">
 <tr>
-<th><h4>customerID</h4></th>
-<th><h4>Firstname</h4></th>
-<th><h4>LastName</h4></th>
+<th><h4>CustomerID</h4></th>
+<th><h4>First Name</h4></th>
+<th><h4>Last Name</h4></th>
 <th><h4>Date of Birth</h4></th>
 <th><h4>Sex</h4></th>
 <th><h4>Email Address</h4></th>
@@ -41,7 +41,7 @@ include("header.html");
 <th><h4>FlightNo</h4></th>
 <th><h4>Departure Date</h4></th>
 <th><h4>Daparture Time</h4></th>
-<th><h4>Arrivale Time</h4></th>
+<th><h4>Arrival Time</h4></th>
 </tr>
 
 <?php 
@@ -111,7 +111,7 @@ echo '</tr>';
 
 </div>
 <div id="logout">
-		<h4>logout button</h4>
+		<h4>Logout Button</h4>
 	</div>
 </body>
 </html>
