@@ -30,22 +30,20 @@ function highlightSelect(inbOutb, id) {
 		}
 		thisFlight.className = inOut + " pickedFlt";
 		updateLeft(thisFlight, inOut);
-	} else {
-		thisFlight.className = inOut;
-	}
+	} 
 } 
 
 function updateLeft(thsFlight, innOut) {
-	document.getElementById("display-selected").style.visibility = "visible";
+	document.getElementById("div-display-selected-" + innOut).style.visibility = "visible";
 	var thisdiv = document.getElementById("display-selected-" + innOut);
-	thisdiv.style.visibility = "visible";
-	thisdiv.innerHTML = '<table cols="5">'+ thsFlight.innerHTML + '</table>';
+	//thisdiv.style.visibility = "visible";
+	thisdiv.innerHTML = '<table>'+ thsFlight.innerHTML + '</table>';
 	showSubmit();
 }
 
 function showSubmit() {
-	var outb = document.getElementById("display-selected-out").style.visibility;
-	var inb = document.getElementById("display-selected-in").style.visibility;
+	var outb = document.getElementById("div-display-selected-out").style.visibility;
+	var inb = document.getElementById("div-display-selected-in").style.visibility;
 	if (outb == "visible" && inb == "visible") {
 		document.getElementById("continue").style.visibility = "visible";
 	}

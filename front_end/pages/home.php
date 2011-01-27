@@ -1,6 +1,6 @@
 <div class="left-column">
 	<div id="flight-search">
-		<p class="search-heading">Book a flight</p>
+		<h2>Book a flight</h2>
 		
 		<!--Search fields populated from available destinations in DB -->
 		<table id="search-table">

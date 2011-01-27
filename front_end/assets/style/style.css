@@ -15,9 +15,11 @@ background-color:#FFF;
 }
 
 h2{
-font-size:30px;
-font-family:fantasy;
-font-weight: normal;
+	font-size:16px;
+	font-weight:bold;
+	background-color:#E6E6E6;
+	padding:5px 5px;
+	text-transform:uppercase;
 }
 
 #header {
@@ -104,7 +106,7 @@ a.menu:hover {color:#000; text-decoration:underline;}
 
 .content-body {
 	float:left; 
-	padding-top:20px;
+	padding-top:25px;
 	word-wrap:normal;
 	width:660px;
 }
@@ -112,6 +114,7 @@ a.menu:hover {color:#000; text-decoration:underline;}
 #flight-search {
 	margin-left:10px;
 	margin-right:10px;
+	border-bottom:1px solid #ccc;
 }
 
 .search-heading {
@@ -124,16 +127,17 @@ a.menu:hover {color:#000; text-decoration:underline;}
 	padding:5px;
 }
 
-#displayFlights {
+.displayFlights {
 	border-spacing: 0px;
 	border-collapse: collapse;
 	background-color:#E0E0E0;
 	width:620px;
 }
 
-#displayFlights tr:hover { background-color:#27ACD6; }
+.displayFlights tr.out:hover{ background-color:#27ACD6; }
+.displayFlights tr.in:hover{ background-color:#27ACD6; }
 
-#displayFlights .row-title
+.displayFlights .row-title
 {
 font-weight: normal;
 background: #B0B0B0;
@@ -188,3 +192,17 @@ p.flights.subtitle {
 .pickedFlt {
 	background-color:#C8E8F2;
 }
+
+#display-selected {
+	margin-left:10px;
+	margin-right:10px;
+	border-bottom:1px solid #ccc;;
+}
+
+#passenger-details {
+	margin-left:10px;
+	margin-right:10px;
+	border-bottom:1px solid #ccc;;
+}
+
+#continue { float:right; }
