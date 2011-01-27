@@ -17,8 +17,8 @@
     </div>
 </div>
 
-<div id="content-body">
-	<p>Details</p>
+<div class="content-body">
+	<h2>Passenger Details</h2>
     	<form action="confirmation.html" method="post">
 		<table id="details">
 			<tr><td>Passenger 1</td></tr>

@@ -36,7 +36,7 @@
 </div>
 
 <div class="content-body">
-<p class="page-title">Select your flights</p>
+<h2>Select your flights</h2>
 
 <div class="results-box outbound">
     <div class="heading">

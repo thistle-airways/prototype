@@ -30,7 +30,7 @@
     </div>
 </div>
 <div class="content-body">
-<h2>Confirmation of booking</h2>
+<h2>Booking Confirmation</h2>
 		Thank you for your booking.<br/>
         
         Your comfirmation code is HHOEMZ</br>
