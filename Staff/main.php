@@ -62,22 +62,7 @@ include("header.html");
 								<tr><td>Destination:</td> <td>
 								<?php
 								// get via query in the future
-								
-								$airports[0] = '';
-								$airports[1] = 'MAN';
-								$airports[2] = 'LBA';
-								$airports[3] = 'LPL';
-								$airports[4] = 'EMA';
-								$airports[5] = 'BHX';
-								$airports[6] = 'LTN';
-								$airports[7] = 'STN';
-								$airports[8] = 'LHR';
-								$airports[9] = 'LGW';
-								$airports[10] = 'LCY';
-								$airports[11] = 'BRS';
-								$airports[12] = 'CWL';
-								$airports[13] = 'ABZ';
-								$airports[14] = 'NCL';
+							
 
 								
 								dropdown($airports)?>
