@@ -59,13 +59,148 @@ include("header.html");
 					<form name="Flight_info" method="post" action="flightAndScheduleSearch.php?action=Fsearch" align=right>
 						<table border="0" id="searchsub">
 							
-								<tr><td>Destination:</td> <td><input type="text" name="Dest" ></input></td></tr>
-								<tr><td>Departure:</td> <td><input type="text" name="Dep" ></input></td></tr>
-								<tr><td>Departure Date:</td> <td><input type="text" name="DepDat" ></input></td></tr>
-								<tr><td>Departure Time:</td> <td><input type="text" name="DepTim" ></input></td></tr>
-								<tr><td>Available Economy:</td> <td><input type="text" name="" ></input></td></tr>
-								<tr><td>Available Business:</td> <td><input type="text" name="" ></input></td></tr>
-								<tr><td>Available Group:</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Destination:</td> <td>
+								<select>
+									  <option></option>
+									  <option>NCL</option>
+									  <option>MAN</option>
+									  <option>LBA</option>
+									  <option>LPL</option>
+									  <option>EMA</option>
+									  <option>BHX</option>
+									  <option>LTN</option>
+									  <option>STN</option>
+									  <option>LHR</option>
+									  <option>LGW</option>
+									  <option>LCY</option>
+									  <option>BRS</option>
+									  <option>CWL</option>
+									  <option>ABZ</option>
+									  <option>...</option>
+									</select>
+								</td>
+								</tr>
+								<tr><td>Departure:</td> <td>								
+								<select>
+									  <option></option>
+									  <option>NCL</option>
+									  <option>MAN</option>
+									  <option>LBA</option>
+									  <option>LPL</option>
+									  <option>EMA</option>
+									  <option>BHX</option>
+									  <option>LTN</option>
+									  <option>STN</option>
+									  <option>LHR</option>
+									  <option>LGW</option>
+									  <option>LCY</option>
+									  <option>BRS</option>
+									  <option>CWL</option>
+									  <option>ABZ</option>
+									  <option>...</option>
+									</select></td></tr>
+								<tr><td>Departure Date:</td> <td>
+									<select>
+									  <option></option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option>
+									  <option>9</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>...</option>
+									</select>
+									<select>
+									  <option></option>
+									  <option>1</option>
+									  <option>2</option>
+									  <option>3</option>
+									  <option>4</option>
+									  <option>5</option>
+									  <option>6</option>
+									  <option>7</option>
+									  <option>8</option>
+									  <option>9</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									</select>
+									<select>
+									  <option>2011</option>
+
+									</select>
+									</td></tr>
+								<tr><td>Departure Time:</td><td> 
+								<select>
+									  <option></option>
+								      <option>00</option>
+									  <option>01</option>
+									  <option>02</option>
+									  <option>03</option>
+									  <option>04</option>
+									  <option>05</option>
+									  <option>06</option>
+									  <option>07</option>
+									  <option>08</option>
+									  <option>09</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>15</option>
+									  <option>16</option>
+									  <option>17</option>
+									  <option>18</option>
+									  <option>19</option>
+									  <option>20</option>
+									  <option>21</option>
+									  <option>22</option>
+									  <option>23</option>
+									 
+									</select>
+									:
+									<select>
+									  <option></option>
+									  <option>00</option>
+									  <option>01</option>
+									  <option>02</option>
+									  <option>03</option>
+									  <option>04</option>
+									  <option>05</option>
+									  <option>06</option>
+									  <option>07</option>
+									  <option>08</option>
+									  <option>09</option>
+									  <option>10</option>
+									  <option>11</option>
+									  <option>12</option>
+									  <option>13</option>
+									  <option>14</option>
+									  <option>15</option>
+									  <option>16</option>
+									  <option>17</option>
+									  <option>18</option>
+									  <option>19</option>
+									  <option>20</option>
+									  <option>21</option>
+									  <option>22</option>
+									  <option>23</option>
+									  <option>...</option>
+									  <option>60</option>
+									</select>
+								</td></tr>
+								<tr><td>Available Economy: >=</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Available Business: >=</td> <td><input type="text" name="" ></input></td></tr>
+								<tr><td>Available Group: >=</td> <td><input type="text" name="" ></input></td></tr>
 	
 							<tr>
 								<td><input type="submit" value="Search" /></td>
