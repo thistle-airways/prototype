@@ -36,13 +36,13 @@ function datePicker($defDay = FALSE, $defMonth = FALSE) {
 	</div>';
 }
 
-function timePicker ($defHour = 0, $defMin = 0)
+function timePicker ($defHour = -1, $defMin = -1)
 {
 	echo '<div class="time-select">';
 	//hour
 	echo '<select class="hour">';
 	echo '<option/>';
-	for ($i = 1; $i<24; $i++)
+	for ($i = 0; $i<24; $i++)
 	{
 		if($i == $defHour ){?> <option selected><?php } else { ?><option><?php }
 		echo $i.'</option>';

@@ -75,7 +75,7 @@ include("header.html");
 									<?php datePicker(1,1); ?>
 									</td></tr>
 								<tr><td>Departure Time:</td><td> 
-								<?php timePicker(0,0);?>
+								<?php timePicker();?>
 								</td></tr>
 								<tr><td>Available Economy: >=</td> <td><input type="text" name="" ></input></td></tr>
 								<tr><td>Available Business: >=</td> <td><input type="text" name="" ></input></td></tr>

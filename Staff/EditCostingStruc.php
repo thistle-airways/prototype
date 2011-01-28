@@ -19,7 +19,7 @@ $q_user = mysql_query("SELECT * FROM prices");
 								
 								<tr><th colspan="2">Refine Structures</th></tr>
 								<tr><td>PriceID:</td> <td><input type="text" name="Dest" ></input></td></tr>
-								<tr><td>PriceName:</td> <td><input type="text" name="Dep" ></input></td></tr>
+								<tr><td>PriceName:</td> <td><?php datePicker();?></td></tr>
 	
 							<tr>
 								<td colspan="2"><input type="submit" value="Search" /></td>

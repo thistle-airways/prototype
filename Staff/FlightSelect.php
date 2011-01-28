@@ -17,10 +17,10 @@ $q_user = mysql_query("SELECT * FROM flight");
 						<table border="0" id="ResultRefine">
 								
 								<tr><th colspan="2">Refine Flights</th></tr>
-								<tr><td>Destination:</td> <td><input type="text" name="Dest" ></input></td></tr>
-								<tr><td>Departure:</td> <td><input type="text" name="Dep" ></input></td></tr>
-								<tr><td>Departure Date:</td> <td><input type="text" name="DepDat" ></input></td></tr>
-								<tr><td>Departure Time:</td> <td><input type="text" name="DepTim" ></input></td></tr>
+								<tr><td>Destination:</td> <td><?php dropdown($airports);?></td></tr>
+								<tr><td>Departure:</td> <td><?php dropdown($airports);?></td></tr>
+								<tr><td>Departure Date:</td> <td><?php datePicker();?></input></td></tr>
+								<tr><td>Departure Time:</td> <td><?php datePicker();?></input></td></tr>
 	
 							<tr>
 								<td colspan="2"><input type="submit" value="Search" /></td>
