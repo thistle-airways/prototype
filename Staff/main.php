@@ -62,7 +62,7 @@ include("header.html");
 								<tr><td>Destination:</td> <td>
 								<?php
 								// get via query in the future
-								autoFill(1);?>
+								autoFill(1,"DestDiv");?>
 								</td>
 								</tr>
 								<tr><td>Departure:</td> <td>								

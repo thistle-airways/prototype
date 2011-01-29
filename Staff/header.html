@@ -45,7 +45,7 @@ include ("config/functions.inc.php");
 								
 ?>
 
-<script type="text/javascript">
+<script type="text/javascript"  language="javascript">
 function select(key, type)
 {
 	//type =1 is flight
@@ -128,7 +128,7 @@ function selectRange(iStart, iLength, txtBox) {
 };
 
 
-function autoFills(key,textBox, dataSet)
+function autoFills(key,textBox, dataSet, divname)
 {
 	
 	var values= ["LPL", "LBA","LHR","LPW"];
@@ -138,9 +138,27 @@ function autoFills(key,textBox, dataSet)
         return 0;
     } else {
         instanceAF(textBox, values);
+		createDiv(divname);
     }
 	
 }
+
+function createDiv(div)
+    {
+        var divTag = document.createElement("div");
+        
+        divTag.id = "div1";
+        
+        divTag.setAttribute("align","center");
+        
+        divTag.style.margin = "0px auto";
+        
+        divTag.className ="dynamicDiv";
+        
+        divTag.innerHTML = "This HTML Div tag created using Javascript DOM dynamically.";
+        
+        document.getElementById(div).appendChild(divTag);
+    }
 
 
 
