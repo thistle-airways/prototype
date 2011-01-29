@@ -1,40 +1,12 @@
 
-<script type="text/javascript">
-function select(key, type)
-{
-	//type =1 is flight
-	//type =2 is schedule
-	// type=3 is costing
-	if(type=='1')
-	{
-		window.location = "flightinfoEdit.php?flightNo="+key;
 
-	}
-	else if(type =='2')
-	{
-		window.location = "scheduleInfoEdit.php?ScheduleID="+key;
-	}
-	
-	else if(type =='3')
-	{
-		window.location = "EditCostingStrucInfo.php?priceID="+key;
-	}
-	else if(type=='4')
-	{
-		window.location = "expenceEdit.php";
-	}
-	else if(type=='5')
-	{
-		window.location = "EditVarCost.php";
-	}
-	else if(type=='6')
-	{
-		window.location = "UserEdit.php";
-	}
-	
-	
-}
-</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
 
 <?php
 include ("config/functions.inc.php");
@@ -73,11 +45,107 @@ include ("config/functions.inc.php");
 								
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<script type="text/javascript">
+function select(key, type)
+{
+	//type =1 is flight
+	//type =2 is schedule
+	// type=3 is costing
+	if(type=='1')
+	{
+		window.location = "flightinfoEdit.php?flightNo="+key;
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+	}
+	else if(type =='2')
+	{
+		window.location = "scheduleInfoEdit.php?ScheduleID="+key;
+	}
+	
+	else if(type =='3')
+	{
+		window.location = "EditCostingStrucInfo.php?priceID="+key;
+	}
+	else if(type=='4')
+	{
+		window.location = "expenceEdit.php";
+	}
+	else if(type=='5')
+	{
+		window.location = "EditVarCost.php";
+	}
+	else if(type=='6')
+	{
+		window.location = "UserEdit.php";
+	}
+	
+	
+}
 
-<head>
+function instanceAF(textBox, dataSet)
+{
+
+	var sugested =[];
+	var txt = textBox.value;
+	
+	
+	for(var i = 0; i < dataSet.length; ++i)
+	{
+		for(var j=0; j<txt.length; ++j)
+		{
+			if(txt.charAt(j)!=dataSet[i].charAt(j))
+			{
+				
+				break;
+			}
+			if(j == txt.length-1)
+			{
+			
+				sugested.push(dataSet[i]);
+			}
+		}
+	}
+	
+	if (sugested.length >0)
+	{
+		var len = txt.length;
+		textBox.value=sugested[0];
+		selectRange(len,sugested[0].length,textBox);
+	}
+
+}
+
+function selectRange(iStart, iLength, txtBox) {
+    if (txtBox.createTextRange) {
+        var range = txtBox.createTextRange(); 
+        range.moveStart("character", iStart); 
+        range.moveEnd("character", iLength - txtBox.value.length); 
+        range.select();
+    } else if (txtBox.setSelectionRange) {
+        txtBox.setSelectionRange(iStart, iLength);
+    }
+
+    txtBox.focus(); 
+};
+
+
+function autoFills(key,textBox, dataSet)
+{
+	
+	var values= ["LPL", "LBA","LHR","LPW"];
+	
+	//textBox.value = "sddsa";
+	if (key < 32 || (key >= 33 && key <= 46) || (key >= 112 && key <= 123)) {
+        return 0;
+    } else {
+        instanceAF(textBox, values);
+    }
+	
+}
+
+
+
+</script>
+
 <title>Thistle Airways</title>
 <meta http-equiv="Content-Type" content= "text/html; charset=utf-8" />
 

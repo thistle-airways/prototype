@@ -31,7 +31,7 @@ include("header.html");
 						flights and their schedules</p>
 	</div>
 	<br/><br/>
-	<div id="searches">
+	<div id="searches" >
 		<table border="2" id="searchtable">
 			
 			<th colspan="2">Search a Flight </th>
@@ -62,10 +62,7 @@ include("header.html");
 								<tr><td>Destination:</td> <td>
 								<?php
 								// get via query in the future
-							
-
-								
-								dropdown($airports)?>
+								autoFill(1);?>
 								</td>
 								</tr>
 								<tr><td>Departure:</td> <td>								
