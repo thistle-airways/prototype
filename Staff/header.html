@@ -81,13 +81,13 @@ function select(key, type)
 	
 }
 
-function instanceAF(textBox, dataSet)
+function instanceAF(textBox, dataSet,divname)
 {
 
 	var sugested =[];
 	var txt = textBox.value;
 	
-	
+	// THIS CAN BE OPTIMISED IF NACASERRY, IM JUST LAZY
 	for(var i = 0; i < dataSet.length; ++i)
 	{
 		for(var j=0; j<txt.length; ++j)
@@ -105,14 +105,43 @@ function instanceAF(textBox, dataSet)
 		}
 	}
 	
+	//TO HERE
+	
 	if (sugested.length >0)
 	{
 		var len = txt.length;
 		textBox.value=sugested[0];
 		selectRange(len,sugested[0].length,textBox);
+		
+		if(!document.getElementById("div1"))
+		{
+			CreateDropDown(divname, sugested);
+		}
+		else
+		{appendSelection(sugested, "div1");}
 	}
 
 }
+
+function appendSelection(newSelection, divId)
+	{
+		
+		var html = generateSelectionTable(newSelection);
+		document.getElementById("div1").innerHTML = html;
+	
+	}
+function generateSelectionTable(list)
+	{
+		var divCont ="<table id='dropdown'>";
+		for(var i=0;i<list.length;++i)
+		{
+			divCont += "<tr><td>"+list[i]+"</td></tr>";
+		}
+		divCont+="</table>";
+	
+        return divCont;
+
+	}
 
 function selectRange(iStart, iLength, txtBox) {
     if (txtBox.createTextRange) {
@@ -137,13 +166,13 @@ function autoFills(key,textBox, dataSet, divname)
 	if (key < 32 || (key >= 33 && key <= 46) || (key >= 112 && key <= 123)) {
         return 0;
     } else {
-        instanceAF(textBox, values);
-		createDiv(divname);
+        instanceAF(textBox, values,divname);
+		
     }
 	
 }
 
-function createDiv(div)
+function CreateDropDown(div, list)
     {
         var divTag = document.createElement("div");
         
@@ -151,14 +180,36 @@ function createDiv(div)
         
         divTag.setAttribute("align","center");
         
+		divTag.style.position = "absolute";
         divTag.style.margin = "0px auto";
-        
+        divTag.style.zIndex="1";
         divTag.className ="dynamicDiv";
         
-        divTag.innerHTML = "This HTML Div tag created using Javascript DOM dynamically.";
+		var divCont = generateSelectionTable(list);
+	
+        divTag.innerHTML = divCont;
+		
+		
+		 var backColor = new String();
+         backColor = divTag.style.backgroundColor;
+			
+		    if(backColor.toLowerCase()=='#eeeeee' || backColor.toLowerCase()=='rgb(238, 238, 238)')
+            {
+                divTag.style.backgroundColor = '#c0c0c0';
+            }
+            else
+            {
+                divTag.style.backgroundColor = '#eeeeee';
+            }
         
         document.getElementById(div).appendChild(divTag);
     }
+function removeList(container, removie)
+	{
+		var cont = document.getElementById(container);
+		var removed = document.getElementById(removie);
+		cont.removeChild(removed);
+	}
 
 
 
