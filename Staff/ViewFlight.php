@@ -22,10 +22,10 @@ include("header.html");
 
 	<tr><th colspan="2"><h4> Flight Details</h4></th></tr>
 	<tr><td>FlightNo:</td><td> <?php echo $data['flightNo'];?></td></tr>
-	<tr><td>destination: </td><td><?php echo $data['destination'];?></td></tr>
-	<tr><td>departure: </td><td><?php echo $data['departure'];?></td></tr>
-	<tr><td>capacity: </td><td><?php echo $data['capacity'];?></td></tr>
-	<tr><td>Econemy Seats:</td><td> <?php echo $data['econemyseats'];?></td></tr>
+	<tr><td>Destination: </td><td><?php echo $data['destination'];?></td></tr>
+	<tr><td>Departure: </td><td><?php echo $data['departure'];?></td></tr>
+	<tr><td>Capacity: </td><td><?php echo $data['capacity'];?></td></tr>
+	<tr><td>Economy Seats:</td><td> <?php echo $data['econemyseats'];?></td></tr>
 	<tr><td>Business Seats: </td><td><?php echo $data['businessseats'];?></td></tr>
 	<tr><td>Group Seats: </td><td><?php echo $data['groupseats'];?></td></tr>
 	<tr><td>Costing Structure </td><td><?php echo $data['price'];?></td></tr>
@@ -41,7 +41,7 @@ include("header.html");
 
 <div id="scheduleContainer">
 
-<h3> flight number: <?php echo $flightNo?> flight schedules </h3>
+<h3> Flight Number: <?php echo $flightNo?> flight schedules </h3>
 
 <table border="1" align=left id="displayInfo">
 <tr>

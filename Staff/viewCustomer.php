@@ -19,12 +19,12 @@ include("header.html");
 ?>
 <table id="displayInfo" border=1>
 <tr><th colspan=2>Customer Details</th></tr>
-<tr><td>customerID:</td> <td><?php echo $data['customerID'];?></td></tr>
+<tr><td>CustomerID:</td> <td><?php echo $data['customerID'];?></td></tr>
 <tr><td>First Name: </td> <td><?php echo $data['Firstname'];?></td></tr>
-<tr><td>Last name: </td> <td><?php echo $data['LastName'];?></td></tr>
+<tr><td>Last Name: </td> <td><?php echo $data['LastName'];?></td></tr>
 <tr><td>Date Of Birth: </td> <td><?php echo $data['DOB'];?></td></tr>
 <tr><td>Sex: </td> <td><?php echo $data['Sex'];?></td></tr>
-<tr><td>EmailAddress: </td> <td><?php echo $data['EmailAddress'];?></td></tr>
+<tr><td>Email Address: </td> <td><?php echo $data['EmailAddress'];?></td></tr>
 <tr><th colspan=2>
 	<form>
 		<input type="button" value="Edit" name="Edit_customer" onClick="window.location='custInfoEdit.php?custID=<?php echo $customerID;?>'"> 
@@ -104,7 +104,7 @@ $data = mysql_fetch_array($result);
 
 </div>
 <div id="logout">
-		<h4>logout button</h4>
+		<h4>Logout Button</h4>
 	</div>
 </body>
 </html>

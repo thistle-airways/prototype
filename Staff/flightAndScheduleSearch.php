@@ -120,7 +120,7 @@ echo '</tr>';
 
 </div>
 <div id="logout">
-		<h4>logout button</h4>
+		<h4>Logout Button</h4>
 	</div>
 </body>
 </html>

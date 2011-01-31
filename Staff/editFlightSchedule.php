@@ -17,10 +17,10 @@ $q_user = mysql_query("SELECT * FROM flightSchedule");
 	<form name="Flight_info" method="post" action="" align=right>
 						<table border="0" id="ResultRefine">
 								
-								<tr><th colspan="2">Refine schedules</th></tr>
+								<tr><th colspan="2">Refine Schedules</th></tr>
 								<tr><td>FlightNo:</td> <td><input type="text" name="Dest" ></input></td></tr>
-								<tr><td>Departure Date:</td> <td><input type="text" name="Dep" ></input></td></tr>
-								<tr><td>Departure Time:</td> <td><input type="text" name="DepTim" ></input></td></tr>
+								<tr><td>Departure Date:</td> <td><?php datePicker();?></td></tr>
+								<tr><td>Departure Time:</td> <td><?php datePicker();?></td></tr>
 	
 							<tr>
 								<td colspan="2"><input type="submit" value="Search" /></td>

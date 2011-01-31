@@ -78,13 +78,8 @@ width:100%;
 }
 
 #nav{
- float:left;
+ float:top;
  height: 250px;
- width:15%;
-}
-#searches {
-	float:left;
-	width: 85%;
 }
 #navtable{
 	border-collapse:collapse;
@@ -183,8 +178,7 @@ background-color: #FF9966;
 
 }
 
-
-
+#dropdown tr:hover { background-color: #4a70aa; }
 
 -->
 </style>

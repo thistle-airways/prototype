@@ -28,11 +28,11 @@ include("header.html");
 	<form name="Flight_info" method="post" action="processSchedule.php?action=PSchedule" >
 		<table border="1" id="inputData">
 			<th colspan="2">Enter Schedule Information</th>
-			<tr><td>Schedule ID: </td><td> <input type="text" name="schID" ></input></td></tr>
-			<tr><td>Flight No:  </td><td><input type="text" name="FlightNo"></input></td></tr>
-			<tr><td>Departure Date(yyyy:mm:dd):  </td><td><input type="text" name="depdate"  ></input></td></tr>
-			<tr><td>Departure Time(hh:mm):  </td><td><input type="text" name="depTime"  ></input></td></tr>
-			<tr><td>Arrivale Time(hh:mm):  </td><td><input type="text" name="arrivTime" ></input></td></tr>
+			<tr><td>ScheduleID: </td><td> <input type="text" name="schID" ></input></td></tr>
+			<tr><td>FlightNo:  </td><td><input type="text" name="FlightNo"></input></td></tr>
+			<tr><td>Departure Date:  </td><td><?php datePicker();?></td></tr>
+			<tr><td>Departure Time:  </td><td><?php timePicker();?></input></td></tr>
+			<tr><td>Arrival Time:  </td><td><?php timePicker();?></input></td></tr>
 			<tr><th colspan="2"><input type="submit" /></tr></tr>
 		</table>
 </form>

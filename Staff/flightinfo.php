@@ -29,18 +29,19 @@ include("header.html");
 	<table border="1" id="inputData">
 		<tr ><th colspan="2"><h4>Enter Flight Information</h4></th></tr>
 		<tr><td>Flight Number:</td><td> <input type="text" name="FNo"/></td></tr>
-		<tr><td>Flight Destination: </td><td><input type="text" name="dest" /></td></tr>
-		<tr><td>Flight Departure: </td><td><input type="text" name="depart" /></td></tr>
+		<tr><td>Flight Destination: </td><td><?php dropDown($airports);?></td></tr>
+		<tr><td>Flight Departure: </td><td><?php dropDown($airports);?></td></tr>
 		<tr><td>Flight Capacity: </td><td><input type="text" name="cap"  /></td></tr>
-		<tr><td>No of Economy seats: </td><td><input type="text" name="econmySeats" /></td></tr>
-		<tr><td>No of Business seats: </td><td><input type="text" name="busSeats" /></td></tr>
-		<tr><td>No of Group seats:</td><td> <input type="text" name="groupSeats" /></td></tr>
-		<tr><td>Costing Structure: </td><td><input type="text" name="price" /><br/>
+		<tr><td>No of Economy Seats: </td><td><input type="text" name="econmySeats" /></td></tr>
+		<tr><td>No of Business Seats: </td><td><input type="text" name="busSeats" /></td></tr>
+		<tr><td>No of Group Seats:</td><td> <input type="text" name="groupSeats" /></td></tr>
+		<tr><td>Costing Structure: </td><td><?php dropDown($costing);?>
+		<br/>
 		<FORM> 
 			<INPUT type="button" value="View avalable structures" onClick="window.open('viewCostingStructures.php','costing structures','width=600,height=800')"> 
 		</FORM></td></tr>
 		
-		<tr><td>Temp Flight: </td><td><input type="checkbox" name="price" />weeks:<input value="grayed out untill <- clicked" type="text" name="dureation" /></td></tr>
+		<tr><td>Temp Flight: </td><td><input type="checkbox" name="price" />End Date:<?php datePicker(); ?></td></tr>
 		<tr><th colspan="2"><input type="submit" /></th></tr>
 	</table>
 	
