@@ -43,7 +43,7 @@ include("header.html");
 						<table border="0" id="searchsub">
 							<tr>
 								<td>FlightNo:</td>
-								<td><input type="text" name="FNo" ></input></td>
+								<td><?php autoFill(1,"DestDiv");?></td>
 							</tr>
 							<tr>
 								<td><input type="submit" value="Search" /></td>
@@ -60,9 +60,7 @@ include("header.html");
 						<table border="0" id="searchsub">
 							
 								<tr><td>Destination:</td> <td>
-								<?php
-								// get via query in the future
-								autoFill(1,"DestDiv");?>
+								<?php dropdown($airports)?>
 								</td>
 								</tr>
 								<tr><td>Departure:</td> <td>								

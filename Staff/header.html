@@ -80,16 +80,16 @@ function select(key, type)
 	
 	
 }
-
-function instanceAF(textBox, dataSet,divname)
-{
-
-	var sugested =[];
-	var txt = textBox.value;
+function getSugested(txt, dataSet)
+	{
+	
+		var sugested =[];
+	
 	
 	// THIS CAN BE OPTIMISED IF NACASERRY, IM JUST LAZY
 	for(var i = 0; i < dataSet.length; ++i)
 	{
+	//alert(sugested);
 		for(var j=0; j<txt.length; ++j)
 		{
 			if(txt.charAt(j)!=dataSet[i].charAt(j))
@@ -106,6 +106,16 @@ function instanceAF(textBox, dataSet,divname)
 	}
 	
 	//TO HERE
+	return sugested;
+	}
+
+function instanceAF(textBox, dataSet,divname)
+{
+
+	var txt = textBox.value;
+	
+	var sugested = getSugested(txt,dataSet);
+	
 	
 	if (sugested.length >0)
 	{
@@ -118,31 +128,40 @@ function instanceAF(textBox, dataSet,divname)
 			CreateDropDown(divname, sugested);
 		}
 		else
-		{appendSelection(sugested, "div1");}
+		{if(sugested.length !=1){appendSelection(sugested, "div1",divname);}else{removeList(divname,"div1")}}
 	}
 
 }
 
-function appendSelection(newSelection, divId)
+function appendSelection(newSelection, divId, divname)
 	{
 		
-		var html = generateSelectionTable(newSelection);
+		var html = generateSelectionTable(newSelection, divname);
 		document.getElementById("div1").innerHTML = html;
 	
 	}
-function generateSelectionTable(list)
+function generateSelectionTable(list, divname)
 	{
 		var divCont ="<table id='dropdown'>";
 		for(var i=0;i<list.length;++i)
 		{
-			divCont += "<tr><td>"+list[i]+"</td></tr>";
+			divCont += "<tr><td onClick=\"handleClickDropDown('"+list[i]+"','"+divname+"');\">"+list[i]+"</td></tr>";
 		}
 		divCont+="</table>";
-	
+
         return divCont;
 
 	}
+function handleClickDropDown(selected, divname)
+	{
+		var div = divname
+		div = typeof div === "string" ? document.getElementById(div) : div;
+        var elms = div.getElementsByTagName("input");
+		elms[0].value = selected;
+		removeList(divname, "div1")
+		
 
+	}
 function selectRange(iStart, iLength, txtBox) {
     if (txtBox.createTextRange) {
         var range = txtBox.createTextRange(); 
@@ -154,18 +173,24 @@ function selectRange(iStart, iLength, txtBox) {
     }
 
     txtBox.focus(); 
-};
+}
 
 
 function autoFills(key,textBox, dataSet, divname)
 {
 	
-	var values= ["LPL", "LBA","LHR","LPW"];
+	var values= ["TA-EDI-LBA-101", "TA-EDI-LBA-102","TA-LGW-MAN-101","TA-EDI-BHX-102"];
 	
 	//textBox.value = "sddsa";
-	if (key < 32 || (key >= 33 && key <= 46) || (key >= 112 && key <= 123)) {
-        return 0;
-    } else {
+	if (key < 32 || (key >= 112 && key <= 123)) 
+	{
+        if(textBox.value == ""){removeList(divname,"div1");}
+    }
+	else if(key ==38 || key == 40)
+	{
+		moveSelected(key,values,textBox);
+	}
+	else {
         instanceAF(textBox, values,divname);
 		
     }
@@ -185,7 +210,7 @@ function CreateDropDown(div, list)
         divTag.style.zIndex="1";
         divTag.className ="dynamicDiv";
         
-		var divCont = generateSelectionTable(list);
+		var divCont = generateSelectionTable(list, div);
 	
         divTag.innerHTML = divCont;
 		
@@ -206,11 +231,33 @@ function CreateDropDown(div, list)
     }
 function removeList(container, removie)
 	{
-		var cont = document.getElementById(container);
-		var removed = document.getElementById(removie);
-		cont.removeChild(removed);
+		
+			var cont = document.getElementById(container);
+			var removed = document.getElementById(removie);
+			cont.removeChild(removed);
 	}
-
+	/*
+	DOSENT WORK COZ OF THE SUGESTED THING MAYBE TAKE OUT OR MAKE A FIX
+function moveSelected(direction,dataSet,textBox)
+	{
+		var txt = textBox.value;
+		var sugested = getSugested(txt,dataSet);
+		
+		
+		if(direction ==40)
+		{
+			alert(sugested);
+			for(var i=0;i<dataSet.length; i++)
+			{
+				if(sugested[i]==txt)
+				{
+					textBox.value=sugested[i++];
+					break;
+				}
+			}
+		}
+	
+	}*/
 
 
 </script>
@@ -243,6 +290,7 @@ function removeList(container, removie)
 		<td><a href="users.php"><p>Users</p></a></td>
 		</tr>
 	</table>
+
 </div>
 
 <div id="content">

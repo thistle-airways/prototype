@@ -2,7 +2,7 @@
 
 function autoFill($dataSet, $divName)
 {
-	echo '<div id="'.$divName.'"><input id="blargh" type=text autocomplete="off" onkeyup="autoFills(event.keyCode,this,1,\''.$divName.'\');" onblur="removeList(\''.$divName.'\',\'div1\');" /></div>';
+	echo '<div id="'.$divName.'"><input id="blargh" type=text autocomplete="off" onkeyup="autoFills(event.keyCode,this,1,\''.$divName.'\');"/></div>';
 }
 
 function dropdown($entries, $default = '') {
